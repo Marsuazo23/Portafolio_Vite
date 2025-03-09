@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio</title>
+        <link rel="stylesheet" href="less/main.less" />
+        <script type="module" src="/src/scripts/validaciones.js"></script>
+    </head>
+
+    <body>
+        {{>redes}}
+
+        {{>header}}
+        
+        <main>
+            <div class="panel-texto1">
+                <h2>CONTACTAME</h2>
+            </div>
+
+            <div class="panel-texto2">
+                <p>Si tienes alguna pregunta, ¡no dudes en enviarme el formulario abajo y te responderé lo más rápido posible!</p>
+            </div>
+
+            <div class="panel-form">
+                 <form action="contactame.html" method="GET">
+                    <div class="form-row">
+                        <div class="form-group">
+                             <label for="txtNombre">Nombre:</label>
+                            <input id="txtNombre" type="text" placeholder="Nombre Completo"/>
+                            </div>
+                            <div class="form-group">
+                            <label for="txtApellido">Apellido:</label>
+                            <input id="txtApellido" type="text" placeholder="Apellido Completo"/>
+                        </div>
+                    </div>
+                        
+                    <div class="form-group">
+                        <label for="txtEmail">Email:</label>
+                        <input id="txtEmail" name="txtEmail" type="email" placeholder="tucorreo@electronico.com"/>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="txtTeléfono">Número de teléfono:</label>
+                        <input id="txtTeléfono" type="text" placeholder="Número de teléfono"/>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="txtComentarios">Comentarios:</label>
+                        <textarea id="txtComentarios" name="txtBio" placeholder="Tu comentario"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" name="btnEnviar" class="btn-enviar">Enviar</button>
+                    </div>
+
+                    </form>
+                </div>  
+        </main>
+
+        {{>footer}}  
+
+    </body>
+</html>

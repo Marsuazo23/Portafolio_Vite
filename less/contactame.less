@@ -1,0 +1,98 @@
+.panel-texto1 {
+    text-align: center;
+    margin-top: 4rem;
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-decoration: underline;
+        color: @primary-text-color;
+    }
+}
+
+.panel-texto2 {
+    text-align: center;
+    margin: 2rem auto 0;
+    max-width: 80%;
+    font-size: 1.3rem;
+    color: @primary-text-color;
+    line-height: 2.5;
+}
+
+
+.btn-enviar {
+    background-color: @primary-color; 
+    color: @primary-text-color;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    border: 2px solid @primary-text-color;
+
+    &:hover {
+        background-color: darken(@primary-color, 10%); 
+    }
+}
+
+.panel-form {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: @primary-text-color;
+    line-height: 1;
+    font-weight: normal;
+    text-align: left;
+    width: 50%;
+    font-size: 2rem;
+
+    @media (min-width: #breaks[tablet]) {
+        width: 70%; 
+        font-size: 1.8rem; 
+    }
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: column;
+
+    @media (min-width: #breaks[tablet]) {
+        flex-direction: row; 
+    }
+}
+
+.form-group {
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: @primary-text-color;
+
+    @media (min-width: #breaks[tablet]) {
+        font-size: 1.2rem; 
+    }
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 10px; 
+    border: 2px solid @primary-text-color;
+    box-sizing: border-box;
+    background-color: @primary-color;
+    color: @primary-text-color;
+}
+
+textarea {
+    resize: none; 
+    height: 8rem; 
+}

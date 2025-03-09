@@ -1,0 +1,50 @@
+.perfil-imagen {
+    width: 280px;  
+    height: 280px; 
+    border-radius: 50%;  
+    object-fit: cover;  
+    margin: 145px auto; 
+    border: 5px solid @primary-color; 
+    margin-top: 1rem;
+} 
+
+.redes-barra {
+    position: fixed;
+    top: 50%; 
+    left: 0;
+    height: 40%;
+    width: 60px; 
+    background-color: @primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px; 
+    transform: translateY(-50%); 
+}    
+
+.redes-barra ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.redes-barra ul li {
+    margin-bottom: 20px; 
+}
+
+.redes-barra ul li a img {
+    width: 35px; 
+    height: 35px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.4); 
+    }
+}
+
+.card2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
